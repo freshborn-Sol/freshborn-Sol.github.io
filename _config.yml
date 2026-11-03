@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Sol's Lab | 한솔의 보안 연구실"
+title                    : "Sol's Orbit | 한솔의 기록 우주"
 title_separator          : "-"
 subtitle                 : "직접 만들고, 분석하고, 기록합니다"
 name                     : "류한솔"
