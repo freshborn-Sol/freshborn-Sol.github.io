@@ -1,7 +1,16 @@
-# main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: 개발
+    url: /categories/development/
+  - title: CTF/Wargame
+    url: /categories/ctf/
+  - title: Bug Bounty
+    url: /categories/bug-bounty/
+  - title: 블로그/기술문서
+    url: /categories/docs/
+  - title: 논문/컨퍼런스
+    url: /categories/research/
+  - title: 공모전/자격증
+    url: /categories/activities/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

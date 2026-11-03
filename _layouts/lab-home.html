@@ -1,0 +1,17 @@
+---
+layout: lab
+---
+<div class="screen-topline"><span>WORKSPACE / OVERVIEW</span><span>기록은 계속됩니다 <b>↗</b></span></div>
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">WELCOME TO MY COMPUTER ROOM</p><h1>호기심을 켜고,<br><em>깊이 파고듭니다.</em></h1><p class="hero-desc">코드를 만들고, 취약점을 분석하고, 배운 것을 기록합니다.<br>류한솔의 개발과 보안 연구가 쌓이는 공간입니다.</p><a class="primary-link" href="#directories">연구 기록 둘러보기 <span>↘</span></a></div>
+  <div class="console-art" aria-label="쿠루루의 컴퓨터실을 떠올리는 장식용 모니터">
+    <div class="console-head"><span>KU-RU-RU / CONSOLE</span><span class="dots">● ● ●</span></div>
+    <div class="radar"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><div class="radar-center">◎</div><span class="radar-label">CURIOSITY<br>IN PROGRESS</span></div>
+    <div class="console-lines"><span><b>01</b> observe<span>관찰</span></span><span><b>02</b> experiment<span>실험</span></span><span><b>03</b> document<span>기록</span></span></div>
+    <div class="console-foot"><span>NO SHORTCUTS. KEEP EXPLORING.</span><b>▰ ▰ ▰ ▱</b></div>
+  </div>
+</section>
+<section class="directory-section" id="directories"><div class="section-title"><div><p class="eyebrow">CHOOSE A DIRECTORY</p><h2>어떤 기록을 찾고 있나요?</h2></div><span class="section-number">01 — 06</span></div>
+  <div class="directories">{% for category in site.data.lab.categories %}<a class="directory" href="{{ '/categories/' | append: category.key | append: '/' | relative_url }}"><div class="directory-code"><span>{{ category.code }}</span><b>↗</b></div><h3>{{ category.title }}</h3><p>{{ category.description }}</p><span class="entry-count">{{ site.categories[category.key] | size }} RECORDS</span></a>{% endfor %}</div>
+</section>
+<section class="recent"><div class="section-title"><div><p class="eyebrow">LATEST TRANSMISSIONS</p><h2>최근 기록</h2></div><span class="section-number">{{ site.posts | size }} ENTRIES</span></div>{% assign entries = site.posts %}{% include lab-entries.html %}</section>
