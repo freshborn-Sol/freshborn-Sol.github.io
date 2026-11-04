@@ -172,3 +172,16 @@ body { font-family: Roboto, Helvetica, Arial, "Noto Sans KR", sans-serif; font-w
  .intro h1, .about-intro h1 { font-size: 32px; }
  .posts-heading h1 { font-size: 36px; }
 }
+
+/* 홈 자기소개 오른쪽 영상 */
+.intro { position: relative; }
+.intro-media { position: absolute; right: 0; top: 130px; width: 280px; }
+.intro-media video { display: block; width: 100%; height: auto; border-radius: 8px; }
+@media screen and (max-width: 767px) {
+ .intro-media { position: static; width: 100%; margin-top: 28px; }
+ .intro { display: block; }
+ .intro-media { float: right; }
+ .intro h1, .intro .social-icons { clear: left; }
+}
+
+@media screen and (max-width: 767px) { .intro-media { float: none; } }
