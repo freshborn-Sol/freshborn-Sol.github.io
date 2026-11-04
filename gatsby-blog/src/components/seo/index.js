@@ -24,7 +24,7 @@ function Seo({ description, title, favicon = 'posts' }) {
   return (
     <Helmet
       htmlAttributes={{ lang: 'ko' }}
-      link={[{ rel: 'icon', type: 'image/svg+xml', href: `/favicon-${favicon}.svg` }]}
+      link={[{ rel: 'icon', type: 'image/svg+xml', href: `/favicon-${favicon}.svg?v=2` }]}
       title={title}
       defaultTitle={site.siteMetadata.title}
       meta={[
