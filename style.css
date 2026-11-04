@@ -185,3 +185,5 @@ body { font-family: Roboto, Helvetica, Arial, "Noto Sans KR", sans-serif; font-w
 }
 
 @media screen and (max-width: 767px) { .intro-media { float: none; } }
+
+.intro-media img { display: block; width: 100%; height: auto; border-radius: 8px; }
