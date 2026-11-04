@@ -36,3 +36,18 @@ https://github.com/zoomKoding/zoomkoding-gatsby-blog 의 자기소개와 가로 
 blog.js의 words 배열을 수정하면 첫 화면 타이핑 문구를 바꿀 수 있습니다.
 홈과 posts/index.html의 각 글에는 data-category 값으로 development, documents 등의 분류를 지정합니다.
 소개와 활동 타임라인은 about/index.html에서 편집합니다.
+
+## 그 외 카테고리와 날짜 정렬
+홈과 posts/index.html에서 글 카드를 아래처럼 작성합니다. 날짜는 YYYY-MM-DD 형식입니다.
+기본 정렬은 최신순이며 날짜가 없는 글은 마지막에 표시합니다.
+
+```html
+<article class="post-preview" data-category="other" data-date="2026-11-05">
+  <a class="post-card" href="posts/my-post.html">
+    <h3>글 제목</h3>
+    <p>글 요약</p>
+    <div class="card-meta"><span>2026.11.05</span><span class="card-category">그 외</span></div>
+  </a>
+</article>
+```
+posts/index.html에서는 본문 링크 경로를 해당 파일 기준으로 바꾸세요.

@@ -27,8 +27,38 @@ if (typingWord && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 const filters = document.querySelectorAll('.category-filter');
 const cards = document.querySelectorAll('.post-preview[data-category]');
 const searchInput = document.getElementById('site-search');
+const sortSelect = document.getElementById('post-sort');
+// 새 글에 data-date="2026-11-05"처럼 날짜를 지정합니다.
+// 기존 글은 time[datetime] 또는 화면의 날짜 표기도 읽습니다.
+function getPostDate(card) {
+    const time = card.querySelector('time[datetime]');
+    const label = card.querySelector('.date, .card-meta');
+    const raw = card.dataset.date || (time && time.getAttribute('datetime')) || (label && label.textContent) || '';
+    const match = raw.match(/(\d{4})[.\/-](\d{1,2})[.\/-](\d{1,2})/);
+    if (!match) return null;
+    const year = Number(match[1]), month = Number(match[2]), day = Number(match[3]);
+    const date = new Date(Date.UTC(year, month - 1, day));
+    if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return null;
+    return date.getTime();
+}
+function comparePosts(a, b, order) {
+    const first = getPostDate(a), second = getPostDate(b);
+    if (first === null) return second === null ? 0 : 1;
+    if (second === null) return -1;
+    return order === 'oldest' ? first - second : second - first;
+}
+function sortPosts() {
+    const list = document.getElementById('posts');
+    const empty = document.querySelector('.filter-empty');
+    if (!list || !empty) return;
+    Array.from(cards).sort(function (a, b) {
+        return comparePosts(a, b, sortSelect ? sortSelect.value : 'newest');
+    }).forEach(function (card) { list.insertBefore(card, empty); });
+}
+if (sortSelect) sortSelect.addEventListener('change', function () { sortPosts(); updatePosts(); });
 let selectedCategory = 'all';
 function updatePosts() {
+    sortPosts();
     const query = searchInput.value.trim().toLocaleLowerCase();
     let count = 0;
     cards.forEach(function (card) {
