@@ -200,3 +200,5 @@ body { font-family: Roboto, Helvetica, Arial, "Noto Sans KR", sans-serif; font-w
 .list-toolbar { text-align: right; margin: 8px 0 18px; }
 .list-toolbar label { font-size: 13px; margin-right: 8px; }
 .list-toolbar select { font: inherit; font-size: 13px; color: #000; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 6px 10px; cursor: pointer; }
+
+.category-count { margin-left: 5px; font-size: 12px; font-weight: 400; }

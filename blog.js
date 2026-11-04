@@ -26,6 +26,18 @@ if (typingWord && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 // 같은 화면에서 검색과 카테고리 필터 적용
 const filters = document.querySelectorAll('.category-filter');
 const cards = document.querySelectorAll('.post-preview[data-category]');
+// 홈 카테고리별 전체 게시물 수를 표시합니다.
+filters.forEach(function (button) {
+    const badge = button.querySelector('.category-count');
+    if (!badge) return;
+    const total = Array.from(cards).filter(function (card) {
+        return button.dataset.category === 'all' || card.dataset.category === button.dataset.category;
+    }).length;
+    badge.textContent = '(' + total + ')';
+    const label = button.querySelector('.category-label').textContent;
+    button.setAttribute('aria-label', label + ', ' + total + '개의 글');
+});
+
 const searchInput = document.getElementById('site-search');
 const sortSelect = document.getElementById('post-sort');
 // 새 글에 data-date="2026-11-05"처럼 날짜를 지정합니다.
