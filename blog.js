@@ -39,6 +39,11 @@ function updatePosts() {
     empty.hidden = count !== 0;
     empty.textContent = query ? '검색 결과가 없습니다.' : '아직 작성한 글이 없습니다.';
     document.querySelector('.filter-status').textContent = count + '개의 글';
+    const heading = document.getElementById('posts-title');
+    if (heading) {
+        heading.textContent = selectedCategory === 'all' ? 'All' : document.querySelector('.category-filter.selected').textContent;
+        document.getElementById('posts-count').textContent = count + ' posts';
+    }
 }
 filters.forEach(function (button) {
     button.addEventListener('click', function () {
@@ -54,5 +59,5 @@ if (searchInput && document.querySelector('.filter-empty')) {
     searchInput.value = new URLSearchParams(window.location.search).get('q') || '';
     searchInput.addEventListener('input', updatePosts);
     document.querySelector('.search-form').addEventListener('submit', function (event) { event.preventDefault(); updatePosts(); });
-    if (searchInput.value) updatePosts();
+    updatePosts();
 }
