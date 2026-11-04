@@ -1,6 +1,6 @@
 # Sol의 공부 기록
 
-HTML과 CSS만 사용하는 GitHub Pages용 개인 블로그입니다. JavaScript나 프레임워크가 필요하지 않습니다.
+HTML과 CSS 기반의 GitHub Pages용 개인 블로그입니다. 타이핑 효과와 카테고리 필터에 간단한 JavaScript(blog.js)를 사용합니다. 프레임워크는 필요하지 않습니다.
 
 ## 미리보기
 index.html을 브라우저에서 열면 됩니다.
@@ -31,3 +31,8 @@ index.html과 categories 폴더의 해당 카테고리 HTML에 article을 추가
 
 ## 디자인 참고
 https://github.com/zoomKoding/zoomkoding-gatsby-blog 의 자기소개와 가로 카테고리, 글 목록 구성을 참고했습니다. 코드는 수업 범위의 HTML과 CSS로 직접 작성했습니다.
+
+## 동작 편집
+blog.js의 words 배열을 수정하면 첫 화면 타이핑 문구를 바꿀 수 있습니다.
+홈과 posts/index.html의 각 글에는 data-category 값으로 development, documents 등의 분류를 지정합니다.
+소개와 활동 타임라인은 about/index.html에서 편집합니다.
