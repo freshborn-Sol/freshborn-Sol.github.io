@@ -1,6 +1,6 @@
 module.exports = {
   "title": "freshborn-sol.github.io",
-  "description": "류한솔의 개발과 사이버보안 공부 기록",
+  "description": "류한솔의 공부로그",
   "language": "ko",
   "siteUrl": "https://freshborn-sol.github.io",
   "ogImage": "/media/about.webp",
