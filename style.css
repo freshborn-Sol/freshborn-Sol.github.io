@@ -92,3 +92,41 @@ footer a { float: right; }
     .timeline-activity { margin-left: 0; font-size: 15px; }
     .timestamps h2 { font-size: 25px; }
 }
+
+/* 참고 블로그와 맞춘 공통 레이아웃: 중앙 720px, 넓은 소개 영역, 글 카드 */
+#wrap { width: 720px; }
+header, .about-page header { padding: 18px 0; }
+.logo, .about-page .logo { font-size: 20px; }
+.top-menu a, .about-page .top-menu a { font-size: 20px; font-weight: bold; margin-left: 22px; }
+.intro, .about-intro { padding: 115px 0 120px; }
+.intro h1, .about-intro h1 { font-size: 40px; font-weight: normal; line-height: 1.3; margin: 0 0 18px; }
+.intro h1 strong { font-weight: bold; }
+.intro-link { margin: 0; border: 0; font-size: 14px; }
+.category-menu { border: 0; padding-bottom: 10px; overflow-x: auto; white-space: nowrap; }
+.category-menu li { margin: 0 4px 0 0; }
+.category-menu a { padding: 7px 12px; font-size: 15px; }
+.category-menu .selected { border: 0; background-color: #f3f3f3; border-radius: 7px; }
+.post-list { padding: 0; }
+.list-title { display: none; }
+.post-preview { padding: 0; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; }
+.post-card { display: block; padding: 14px; }
+.post-card:hover { text-decoration: none; background-color: #fafafa; }
+.post-preview h3 { font-size: 18px; line-height: 1.5; margin: 0 0 7px; }
+.post-preview p { font-size: 13px; line-height: 1.7; }
+.card-meta { font-size: 12px; margin-top: 12px; overflow: hidden; }
+.card-category { float: right; }
+.posts-heading { padding: 65px 0 45px; }
+.posts-heading h1 { font-size: 32px; margin-bottom: 10px; }
+footer { text-align: center; border: 0; margin-top: 65px; }
+footer a { float: none; margin-left: 15px; }
+@media screen and (max-width: 800px) {
+ #wrap { width: 88%; }
+}
+@media screen and (max-width: 767px) {
+ .logo, .about-page .logo { font-size: 15px; }
+ .top-menu a, .about-page .top-menu a { font-size: 15px; margin-left: 15px; }
+ .intro, .about-intro { padding: 75px 0 80px; }
+ .intro h1, .about-intro h1 { font-size: 30px; }
+ .category-menu a { font-size: 13px; padding: 7px 10px; }
+ .post-preview h3 { font-size: 18px; }
+}
