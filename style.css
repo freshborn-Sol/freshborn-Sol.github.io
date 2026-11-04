@@ -130,3 +130,14 @@ footer a { float: none; margin-left: 15px; }
  .category-menu a { font-size: 13px; padding: 7px 10px; }
  .post-preview h3 { font-size: 18px; }
 }
+
+.category-filter { font: inherit; font-size: 15px; color: #000; background-color: #fff; border: 0; padding: 7px 12px; cursor: pointer; border-radius: 7px; }
+.category-filter:hover { background-color: #f7f7f7; }
+.category-filter:focus-visible { outline: 2px solid #000; outline-offset: 2px; }
+.typing-cursor { margin-left: 3px; }
+.filter-empty { padding: 45px 0; font-size: 15px; }
+.filter-status { margin-top: 12px; font-size: 12px; }
+[hidden] { display: none; }
+@media screen and (max-width: 767px) {
+ .category-filter { font-size: 13px; padding: 7px 10px; }
+}

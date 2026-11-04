@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈 | Sol의 공부 기록</title>
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <div id="wrap">
     <header id="top"><a class="logo" href="index.html">freshborn-sol.github.io</a><nav class="top-menu"><a href="about/">about</a><a href="posts/">posts</a></nav></header>
-    <section class="intro" id="about"><h1>안녕하세요.<br>기록하는<br>학생 <strong>류한솔</strong>입니다.</h1><a class="intro-link" href="https://github.com/freshborn-Sol">GitHub ↗</a></section>
-<nav class="category-menu" id="categories" aria-label="글 카테고리"><ul><li><a class=selected aria-current=page href="index.html">ALL</a></li><li><a  href="categories/development.html">개발</a></li><li><a  href="categories/ctf.html">CTF/WARGAME</a></li><li><a  href="categories/bug-bounty.html">BUG BOUNTY</a></li><li><a  href="categories/documents.html">블로그/기술문서</a></li><li><a  href="categories/papers.html">논문/컨퍼런스</a></li><li><a  href="categories/activities.html">공모전/자격증</a></li></ul></nav><main class="post-list" id="posts"><h2 class="list-title">최근 기록</h2><article class="post-preview"><a class="post-card" href="posts/html-css.html"><h3>HTML과 CSS로 첫 블로그 만들기</h3><p>수업에서 배운 태그와 스타일 속성으로 나만의 공부 공간을 만들었습니다.</p><div class="card-meta"><span>2026.11.04</span><span class="card-category">개발</span></div></a></article><article class="post-preview"><a class="post-card" href="posts/start-blog.html"><h3>공부 기록을 시작하며</h3><p>배운 내용과 활동을 다시 찾아볼 수 있도록 기록을 시작합니다.</p><div class="card-meta"><span>2026.11.04</span><span class="card-category">블로그/기술문서</span></div></a></article></main>
+    <section class="intro" id="about"><h1>안녕하세요.<br><span id="typing-word">공부하는</span><span class="typing-cursor" aria-hidden="true">|</span><br>학생 <strong>류한솔</strong>입니다.</h1><a class="intro-link" href="https://github.com/freshborn-Sol">GitHub ↗</a></section>
+<nav class="category-menu" id="categories" aria-label="글 카테고리"><ul><li><button type="button" class="category-filter selected" data-category="all" aria-pressed="true">ALL</button></li><li><button type="button" class="category-filter" data-category="development" aria-pressed="false">개발</button></li><li><button type="button" class="category-filter" data-category="ctf" aria-pressed="false">CTF/WARGAME</button></li><li><button type="button" class="category-filter" data-category="bug-bounty" aria-pressed="false">BUG BOUNTY</button></li><li><button type="button" class="category-filter" data-category="documents" aria-pressed="false">블로그/기술문서</button></li><li><button type="button" class="category-filter" data-category="papers" aria-pressed="false">논문/컨퍼런스</button></li><li><button type="button" class="category-filter" data-category="activities" aria-pressed="false">공모전/자격증</button></li></ul></nav><main class="post-list" id="posts"><h2 class="list-title">최근 기록</h2><article class="post-preview" data-category="development"><a class="post-card" href="posts/html-css.html"><h3>HTML과 CSS로 첫 블로그 만들기</h3><p>수업에서 배운 태그와 스타일 속성으로 나만의 공부 공간을 만들었습니다.</p><div class="card-meta"><span>2026.11.04</span><span class="card-category">개발</span></div></a></article><article class="post-preview" data-category="documents"><a class="post-card" href="posts/start-blog.html"><h3>공부 기록을 시작하며</h3><p>배운 내용과 활동을 다시 찾아볼 수 있도록 기록을 시작합니다.</p><div class="card-meta"><span>2026.11.04</span><span class="card-category">블로그/기술문서</span></div></a></article><p class="filter-empty" hidden>아직 작성한 글이 없습니다.</p><p class="filter-status" role="status" aria-live="polite"></p></main>
     <footer>© 2026 Sol · 배운 것을 하나씩, 내 것으로.<a href="#top">맨 위로 ↑</a></footer>
 </div>
+<script src="blog.js?v=1"></script>
 </body>
 </html>
