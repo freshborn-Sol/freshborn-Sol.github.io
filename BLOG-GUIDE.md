@@ -21,10 +21,13 @@ Branch는 master, 폴더는 업로드한 위치에 따라 /(root) 또는 /docs�
 
 ## 글 추가하기
 posts/html-css.html을 복사해 새 HTML 파일을 만들고 제목과 본문을 수정합니다.
-index.html에서 해당 카테고리 안에 article을 추가하고 새 파일로 링크합니다.
+index.html과 categories 폴더의 해당 카테고리 HTML에 article을 추가하고 새 글로 링크합니다.
 자기소개는 index.html의 id="about", 색상과 여백은 style.css에서 바꿉니다.
 
 ## 수업 내용과 연결
 2주차 외부 CSS, 3주차 구조화 태그와 링크·목록, 4주차 선택자,
 6주차 색상·글꼴·박스 모델, 8주차 float·미디어 쿼리를 사용했습니다.
 예시 글 두 개는 첫 초안이므로 게시 전에 본인의 표현으로 수정할 수 있습니다.
+
+## 디자인 참고
+https://github.com/zoomKoding/zoomkoding-gatsby-blog 의 자기소개와 가로 카테고리, 글 목록 구성을 참고했습니다. 코드는 수업 범위의 HTML과 CSS로 직접 작성했습니다.

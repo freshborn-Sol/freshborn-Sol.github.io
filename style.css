@@ -1,60 +1,61 @@
-/* 2주차: 외부 스타일 시트 / 4주차: 태그, 클래스, 자손 선택자 */
+/* 수업 범위: 선택자, 박스 모델, 글꼴, inline-block, float, 미디어 쿼리 */
 * { margin: 0; padding: 0; }
-body { font-family: Arial, "맑은 고딕", sans-serif; color: #27382e; background-color: #fbfcf9; line-height: 1.8; }
-a { color: inherit; text-decoration: none; }
-a:hover { color: #2e7755; text-decoration: underline; }
-/* 8주차: 중앙 정렬, float와 overflow */
-#wrap { width: 960px; margin: 0 auto; }
-header { overflow: hidden; padding: 25px 0; border-bottom: 1px solid #dae1d8; }
+body { font-family: Arial, "맑은 고딕", sans-serif; color: #000; background-color: #fff; line-height: 1.8; }
+a { color: #000; text-decoration: none; }
+a:hover { text-decoration: underline; }
+#wrap { width: 900px; margin: 0 auto; }
+header { overflow: hidden; padding: 30px 0; }
 .logo { float: left; font-size: 22px; font-weight: bold; }
-.logo span { font-size: 14px; color: #738073; font-weight: normal; }
+.logo span { font-size: 14px; font-weight: normal; }
 .top-menu { float: right; }
-.top-menu a { display: inline-block; margin-left: 24px; font-size: 14px; }
-/* 6주차: 색, 글꼴, 여백, 테두리 */
-.intro { padding: 65px 0 55px; border-bottom: 1px solid #dae1d8; }
-.label { color: #4d775b; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
-h1 { font-size: 42px; line-height: 1.4; margin: 16px 0 20px; }
-.intro p { color: #657166; }
-.intro-link { display: inline-block; margin-top: 22px; font-size: 14px; color: #2e7755; border-bottom: 1px solid #94af96; }
-.content { overflow: hidden; padding: 40px 0; }
-aside { width: 210px; float: left; }
-aside h2 { font-size: 15px; margin-bottom: 15px; }
-aside ul { list-style: none; }
-aside li a { display: block; padding: 7px 0; font-size: 14px; }
-.aside-note { margin-top: 32px; font-size: 12px; color: #7c877b; }
-main { width: 700px; float: right; }
-.main-title { font-size: 25px; margin: 4px 0 28px; }
-.category { padding-bottom: 28px; margin-bottom: 28px; border-bottom: 1px solid #dae1d8; }
-h3 { font-size: 19px; }
-.description { color: #6e796e; font-size: 14px; margin: 4px 0 18px; }
-article { padding: 22px; background-color: #eef3eb; border: 1px solid #dce5d7; border-radius: 8px; }
-.date { color: #6e796e; font-size: 12px; }
-h4 { font-size: 19px; margin: 7px 0; }
-article p { font-size: 14px; }
-.empty { color: #7c877b; font-size: 13px; padding: 16px 0; }
-footer { clear: both; padding: 24px 0; border-top: 1px solid #dae1d8; color: #7c877b; font-size: 12px; }
+.top-menu a { display: inline-block; margin-left: 25px; font-size: 14px; }
+.intro { padding: 70px 0 65px; }
+.label { font-size: 18px; }
+h1 { font-size: 44px; line-height: 1.4; margin: 12px 0 22px; }
+.intro p { font-size: 16px; }
+.intro-link { display: inline-block; margin-top: 20px; font-size: 14px; border-bottom: 1px solid #000; }
+.category-menu { border-bottom: 1px solid #ddd; padding: 0 0 18px; }
+.category-menu ul { list-style: none; }
+.category-menu li { display: inline-block; margin: 8px 22px 0 0; }
+.category-menu a { display: inline-block; font-size: 14px; padding: 3px 0; }
+.category-menu .selected { border-bottom: 2px solid #000; font-weight: bold; }
+.post-list { padding-top: 32px; }
+.list-title { font-size: 16px; margin-bottom: 5px; }
+.list-title span { font-size: 12px; font-weight: normal; margin-left: 10px; }
+.post-preview { padding: 30px 0 34px; border-bottom: 1px solid #e5e5e5; }
+.date { font-size: 12px; }
+.post-preview h3 { font-size: 25px; line-height: 1.5; margin: 10px 0 12px; }
+.post-preview p { font-size: 15px; }
+.post-preview .date { font-size: 12px; }
+.read-more { display: inline-block; font-size: 13px; margin-top: 15px; }
+footer { clear: both; padding: 30px 0; margin-top: 65px; border-top: 1px solid #ddd; font-size: 12px; }
 footer a { float: right; }
 .post { width: 700px; margin: 55px auto; }
-.post h1 { font-size: 32px; }
+.post h1 { font-size: 34px; }
 .post h2 { font-size: 22px; margin: 30px 0 12px; }
 .post p, .post ul { margin-bottom: 18px; }
 .post ul { padding-left: 24px; }
-.back { display: inline-block; margin-bottom: 25px; color: #2e7755; }
-/* 8주차 예제6: 작은 화면에서 float를 해제하고 너비 변경 */
+.back { display: inline-block; margin-bottom: 25px; border-bottom: 1px solid #000; }
+.category-page { padding-top: 45px; }
+.category-page h1 { font-size: 32px; margin-bottom: 30px; }
+.empty { padding: 60px 0; }
+.empty h2 { font-size: 21px; margin-bottom: 12px; }
+.empty a { display: inline-block; margin-top: 20px; font-size: 14px; }
 @media screen and (max-width: 1000px) {
-    #wrap { width: 90%; }
-    aside { width: 23%; }
-    main { width: 73%; }
+    #wrap { width: 88%; }
 }
 @media screen and (max-width: 767px) {
-    .logo, .top-menu, aside, main { float: none; width: auto; }
-    .top-menu { margin-top: 10px; }
-    .top-menu a { margin: 0 20px 0 0; }
-    .intro { padding: 40px 0; }
+    header { padding: 22px 0; }
+    .logo { font-size: 19px; }
+    .logo span { display: none; }
+    .top-menu a { margin-left: 15px; font-size: 13px; }
+    .intro { padding: 48px 0; }
     h1 { font-size: 32px; }
-    aside { margin-bottom: 32px; }
-    aside li { display: inline-block; margin-right: 14px; }
-    .aside-note { display: none; }
+    .intro p { font-size: 14px; }
+    .category-menu li { margin-right: 17px; }
+    .category-menu a { font-size: 13px; }
+    .post-preview h3 { font-size: 22px; }
     .post { width: auto; margin: 35px 0; }
-    .post h1 { font-size: 27px; }
+    .post h1 { font-size: 28px; }
+    footer a { float: none; display: block; margin-top: 10px; }
 }
