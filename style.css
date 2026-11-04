@@ -187,3 +187,11 @@ body { font-family: Roboto, Helvetica, Arial, "Noto Sans KR", sans-serif; font-w
 @media screen and (max-width: 767px) { .intro-media { float: none; } }
 
 .intro-media img { display: block; width: 100%; height: auto; border-radius: 8px; }
+
+/* About 소개 오른쪽 사진 */
+.about-intro { position: relative; }
+.about-photo { position: absolute; right: 0; top: 100px; width: 250px; }
+.about-photo img { display: block; width: 100%; height: auto; border-radius: 12px; }
+@media screen and (max-width: 767px) {
+ .about-photo { position: static; width: 250px; margin: 28px auto 0; }
+}
