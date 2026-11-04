@@ -23,23 +23,36 @@ if (typingWord && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
     window.setTimeout(typeNext, 1800);
 }
 
-// 카테고리를 눌러도 페이지를 이동하지 않고 글 목록만 변경
+// 같은 화면에서 검색과 카테고리 필터 적용
 const filters = document.querySelectorAll('.category-filter');
 const cards = document.querySelectorAll('.post-preview[data-category]');
+const searchInput = document.getElementById('site-search');
+let selectedCategory = 'all';
+function updatePosts() {
+    const query = searchInput.value.trim().toLocaleLowerCase();
+    let count = 0;
+    cards.forEach(function (card) {
+        card.hidden = !((selectedCategory === 'all' || card.dataset.category === selectedCategory) && card.textContent.toLocaleLowerCase().includes(query));
+        if (!card.hidden) count++;
+    });
+    const empty = document.querySelector('.filter-empty');
+    empty.hidden = count !== 0;
+    empty.textContent = query ? '검색 결과가 없습니다.' : '아직 작성한 글이 없습니다.';
+    document.querySelector('.filter-status').textContent = count + '개의 글';
+}
 filters.forEach(function (button) {
     button.addEventListener('click', function () {
-        const category = button.dataset.category;
-        let count = 0;
+        selectedCategory = button.dataset.category;
         filters.forEach(function (item) {
-            const selected = item === button;
-            item.classList.toggle('selected', selected);
-            item.setAttribute('aria-pressed', String(selected));
+            item.classList.toggle('selected', item === button);
+            item.setAttribute('aria-pressed', String(item === button));
         });
-        cards.forEach(function (card) {
-            card.hidden = category !== 'all' && card.dataset.category !== category;
-            if (!card.hidden) count++;
-        });
-        document.querySelector('.filter-empty').hidden = count !== 0;
-        document.querySelector('.filter-status').textContent = button.textContent + ': ' + count + '개의 글';
+        updatePosts();
     });
 });
+if (searchInput && document.querySelector('.filter-empty')) {
+    searchInput.value = new URLSearchParams(window.location.search).get('q') || '';
+    searchInput.addEventListener('input', updatePosts);
+    document.querySelector('.search-form').addEventListener('submit', function (event) { event.preventDefault(); updatePosts(); });
+    if (searchInput.value) updatePosts();
+}

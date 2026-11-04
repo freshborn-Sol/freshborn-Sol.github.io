@@ -141,3 +141,18 @@ footer a { float: none; margin-left: 15px; }
 @media screen and (max-width: 767px) {
  .category-filter { font-size: 13px; padding: 7px 10px; }
 }
+
+header, .about-page header { position: relative; padding-right: 200px; }
+.search-form { position: absolute; right: 0; top: 18px; width: 180px; border-bottom: 1px solid #888; }
+.search-form input { width: 145px; height: 29px; padding: 2px 3px; border: 0; color: #000; background-color: #fff; font: inherit; font-size: 14px; }
+.search-form button { width: 28px; height: 28px; border: 0; background-color: #fff; cursor: pointer; vertical-align: middle; }
+.search-form svg { width: 19px; height: 19px; fill: none; stroke: #000; stroke-width: 2; }
+.social-icons a { display: inline-block; color: #777; margin-right: 20px; line-height: 1; }
+.social-icons a:hover { color: #000; }
+.social-icons svg { width: 28px; height: 28px; }
+@media screen and (max-width: 767px) {
+ header, .about-page header { padding-right: 0; padding-bottom: 58px; }
+ .search-form { top: 58px; width: 100%; }
+ .search-form input { width: 88%; }
+ .search-form button { float: right; }
+}
