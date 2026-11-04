@@ -9,6 +9,6 @@ function CategoryTemplate({ pageContext }) {
   const [tabIndex, setTabIndex] = useState(Math.max(0, categories.indexOf(currentCategory)));
   const posts = edges.map(({node}) => new Post(node));
   const visible = categories[tabIndex] === 'All' ? posts : posts.filter(post => post.categories.includes(categories[tabIndex]));
-  return <Layout><Seo title="Posts" favicon="posts" /><CategoryPageHeader title={categories[tabIndex]} subtitle={`${visible.length} posts`} /><PostTabs tabIndex={tabIndex} onChange={(event,value) => setTabIndex(value)} tabs={categories} posts={posts} /></Layout>;
+  return <Layout><Seo title="Post" favicon="posts" /><CategoryPageHeader title={categories[tabIndex]} subtitle={`${visible.length} posts`} /><PostTabs tabIndex={tabIndex} onChange={(event,value) => setTabIndex(value)} tabs={categories} posts={posts} /></Layout>;
 }
 export default CategoryTemplate;
