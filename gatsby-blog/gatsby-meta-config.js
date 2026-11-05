@@ -7,7 +7,7 @@ module.exports = {
   "ga": "",
   "comments": {
     "utterances": {
-      "repo": ""
+      "repo": "freshborn-Sol/freshborn-Sol.github.io"
     }
   },
   "categories": [

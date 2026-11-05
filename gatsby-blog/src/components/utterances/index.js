@@ -1,47 +1,49 @@
-import React, { createRef, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { getValueFromLocalStorage } from '../../utils/localStorage';
 
-const url = 'https://utteranc.es';
-const branch = 'master';
+const origin = 'https://utteranc.es';
 
-const getTheme = () => getValueFromLocalStorage('isDarkMode') ? 'photon-dark' : 'github-light'
-
-const resetChangeListener = () => {
-  const utterances = document.querySelector('iframe')?.contentWindow;
-  utterances?.postMessage({
-    type: 'set-theme',
-    theme: getTheme()
-  }, url);
+function getTheme() {
+  return getValueFromLocalStorage('isDarkMode') ? 'photon-dark' : 'github-light';
 }
 
 function Utterances({ repo, path }) {
-  const rootElm = createRef();
-  const isUtterancesLoaded = useRef(false);
+  const root = useRef(null);
 
   useEffect(() => {
-    if (!rootElm.current || isUtterancesLoaded.current) return;
-
-    const utterances = document.createElement('script');
-    const utterancesConfig = {
-      src: `${url}/client.js`,
+    const container = root.current;
+    const script = document.createElement('script');
+    const attributes = {
+      src: origin + '/client.js',
       repo,
-      branch,
+      'issue-term': path,
       theme: getTheme(),
-      label: 'comment',
-      async: true,
-      'issue-term': 'pathname',
       crossorigin: 'anonymous',
     };
+    Object.entries(attributes).forEach(([name, value]) => script.setAttribute(name, value));
+    script.async = true;
+    container.appendChild(script);
 
-    Object.keys(utterancesConfig).forEach((configKey) => {
-      utterances.setAttribute(configKey, utterancesConfig[configKey]);
-    });
-    rootElm.current.appendChild(utterances);
-    window.addEventListener('theme', resetChangeListener)
-    isUtterancesLoaded.current = true;
-  }, [repo, rootElm, path]);
+    function syncTheme() {
+      container.querySelector('iframe.utterances-frame')?.contentWindow?.postMessage(
+        { type: 'set-theme', theme: getTheme() },
+        origin,
+      );
+    }
 
-  return <div className="utterances" ref={rootElm} />;
+    window.addEventListener('theme', syncTheme);
+    return () => {
+      window.removeEventListener('theme', syncTheme);
+      container.replaceChildren();
+    };
+  }, [repo, path]);
+
+  return (
+    <section aria-label="댓글" style={{ width: '100%', margin: '32px 0' }}>
+      <h2>댓글</h2>
+      <div ref={root} />
+    </section>
+  );
 }
 
 export default Utterances;
