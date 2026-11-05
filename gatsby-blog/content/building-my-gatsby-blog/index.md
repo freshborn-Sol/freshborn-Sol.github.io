@@ -6,7 +6,7 @@ author: "류한솔"
 emoji: "💻"
 ---
 
-공부한 내용과 활동을 꾸준히 남길 공간이 필요해서 개인 블로그를 만들었다. 처음에는 인터넷활용 수업에서 배운 HTML과 CSS로 시작했고, 이후 Codex의 도움을 받아 Gatsby 템플릿으로 옮겼다. 이 글은 현재 적용된 블로그의 구성과 수정 방법을 정리한 기록이다.
+공부한 내용과 활동을 꾸준히 남기기 위헤 블로그를 만들었다. 처음에는 '인터넷활용' 수업에서 배운 HTML과 CSS로 시작했고, 이후 Codex의 도움을 받아 Gatsby 템플릿으로 옮겼다. 이 글은 현재 적용된 블로그의 구성과 수정 방법을 정리한 기록이다.
 
 ## 1. GitHub Pages로 시작하기
 
@@ -20,9 +20,7 @@ GitHub Pages는 저장소의 파일로 정적 웹사이트를 공개할 수 있�
 
 [이우린 님의 블로그](https://urinlee.github.io/)를 화면 구성의 참고로 삼았고, 최종적으로 [zoomKoding의 Gatsby 블로그 템플릿](https://github.com/zoomKoding/zoomkoding-gatsby-blog)을 적용했다. 단순히 비슷한 화면을 만드는 단계에서, 실제 템플릿 소스를 사용하는 구조로 바꾼 것이다.
 
-현재 소스는 저장소의 `gatsby-blog` 폴더 안에 있다. 원본은 Gatsby 4 기반이며, 빌드는 Node 20 환경에서 실행한다. 설치 과정에서 필요한 Emotion과 react-helmet 의존성을 보완했고, 게시글이 하나도 없는 상태에서도 빌드되도록 GraphQL 타입을 명시했다.
-
-기존 HTML 버전은 백업 브랜치와 루트 파일로 보존했다. 현재 배포는 `gatsby-blog`만 사용하므로, 이제 루트의 `index.html`을 수정해도 새 Gatsby 화면에는 반영되지 않는다.
+원본은 Gatsby 4 기반이며, 빌드는 Node 20 환경에서 실행한다. 설치 과정에서 필요한 Emotion과 react-helmet 의존성을 보완했고, 게시글이 하나도 없는 상태에서도 빌드되도록 GraphQL 타입을 명시했다.
 
 ## 3. 내 블로그에 맞게 바꾼 부분
 
@@ -42,13 +40,13 @@ GitHub Pages는 저장소의 파일로 정적 웹사이트를 공개할 수 있�
 
 ## 4. 새 글 작성 방법
 
-이제 새 글은 Markdown 파일 하나로 작성한다. 저장소에서 아래와 같은 경로를 만들면 된다.
+이제 새 글은 Markdown 파일 하나로 작성한다. 깃 저장소에서 아래와 같은 경로를 만들면 된다.
 
 ```text
 gatsby-blog/content/원하는-글-주소/index.md
 ```
 
-예를 들어 `content/my-first-post/index.md`에 글을 쓰면 본문 주소는 `/my-first-post/`가 된다. 폴더 이름은 짧은 영문과 하이픈으로 정해 두면 관리하기 편하다.
+예를 들어 `content/my-first-post/index.md`에 글을 쓰면 본문 주소는 `/my-first-post/`가 된다.
 
 파일 맨 위에는 글 정보를 작성한다. 이 부분을 frontmatter라고 한다.
 
@@ -102,19 +100,6 @@ Markdown 작성·커밋
 글을 쓰고 홈과 Post의 HTML을 따로 수정할 필요가 없다. Markdown을 기준으로 글 목록과 카테고리 개수가 함께 만들어진다.
 
 작업이 끝났는지는 저장소의 Actions 탭에서 확인한다. 초록색 체크가 표시되면 배포가 성공한 상태다. 제작 중에는 GitHub Actions와 Pages의 서비스 장애로 반영이 오래 지연되기도 했다. 저장소에 커밋이 올라간 것과 공개 사이트 배포가 끝난 것은 별개라는 점도 알게 됐다.
-
-## 6. 앞으로 수정할 파일
-
-| 수정할 내용 | 경로 (`gatsby-blog/` 기준) |
-| --- | --- |
-| 블로그 설명·자기소개·TimeLine·카테고리 | `gatsby-meta-config.js` |
-| 홈 화면 | `src/pages/index.js` |
-| About 화면 | `src/pages/about.js` |
-| Post 화면 | `src/templates/category-template.js` |
-| 소개 글씨·이미지 배치 | `src/components/bio/` |
-| 카테고리 개수·정렬 | `src/components/post-tabs/` |
-| 새 글 | `content/글-주소/index.md` |
-| 홈 GIF·About 사진 | `static/media/` |
 
 블로그 이름은 ‘류한솔의 공부로그’로 정했다. 처음부터 많은 글을 채우기보다는, 공부한 내용과 직접 해본 과정을 하나씩 남겨보려고 한다.
 
