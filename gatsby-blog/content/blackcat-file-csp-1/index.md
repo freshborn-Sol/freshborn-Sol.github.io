@@ -1,6 +1,6 @@
 ---
 title: "BlackCat 웹해킹 기초 스터디 — Dreamhack file-csp-1"
-date: "2026-11-05"
+date: "2026-05-07"
 categories: ["CTF/Wargame"]
 author: "류한솔"
 emoji: "🌐"
