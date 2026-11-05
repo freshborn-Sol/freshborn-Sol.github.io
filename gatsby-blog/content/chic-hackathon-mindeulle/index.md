@@ -26,4 +26,8 @@ emoji: "🌼"
 
 다음에는 가상의 문의 사례를 유형별로 준비해 두 가지를 확인하고 싶다. 먼저 재가공된 문장에 원문의 사실과 요청이 빠짐없이 남는지 본다. 그다음 담당자가 우선순위와 다음 행동을 판단하는 데 도움이 되는지 확인한다. 이 두 결과를 따로 남기면 어느 단계에서 개선이 필요한지 찾을 수 있다.
 
+</br>
+
+<img width="1156" height="652" alt="2026 CHIC Hackthon" src="https://github.com/user-attachments/assets/08ac2b7f-2cd9-4687-ace3-526e69cee825" />
+
 [민들레 팀 저장소](https://github.com/CHIC-SUMMER-HACKATHON-3TEAM/kindly-connect-01)
