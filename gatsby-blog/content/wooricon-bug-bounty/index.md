@@ -1,6 +1,6 @@
 ---
 title: "WooriCON Bug Bounty — 발견한 문제를 보고서로 정리하기"
-date: "2026-11-05"
+date: "2026-09-18"
 categories: ["Bug Bounty"]
 author: "류한솔"
 emoji: "🔍"
