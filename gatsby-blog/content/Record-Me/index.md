@@ -1,4 +1,3 @@
-<img width="750" height="422" alt="2026_08_05_103251" src="https://github.com/user-attachments/assets/7d261c59-c580-4a4e-8f7a-a33adc490ed9" />
 ---
 title: "'나'에 대해 기록하기"
 date: "2026-11-05"
