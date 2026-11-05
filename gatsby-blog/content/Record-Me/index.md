@@ -1,3 +1,4 @@
+<img width="750" height="422" alt="2026_08_05_103251" src="https://github.com/user-attachments/assets/7d261c59-c580-4a4e-8f7a-a33adc490ed9" />
 ---
 title: "'나'에 대해 기록하기"
 date: "2026-11-05"
@@ -37,7 +38,7 @@ emoji: "📝"
 
 <br />
 
-<img width="700" height="403" alt="2026 KW H.O.P.E CONFERENCE" src="https://github.com/user-attachments/assets/50c5304c-2c18-40ec-a230-8ba837e54241" />
+<img width="750" height="422" alt="2026 KW H.O.P.E CONFERENCE" src="https://github.com/user-attachments/assets/65705883-1b6c-4486-afb2-7cf603e122b6" />
 
 ## 나이츠프론티어에 지원한 이유
 
