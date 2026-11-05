@@ -1,6 +1,6 @@
 ---
 title: "WhiteHat School 4기 — 소형 LLM을 역할별로 연결한 취약점 연구"
-date: "2026-11-05"
+date: "2026-10-17"
 categories: ["개발"]
 author: "류한솔"
 emoji: "🛡️"
