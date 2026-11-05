@@ -39,6 +39,8 @@ VeilKey를 평가할 때는 진동이 작동하는지만 보는 것보다 누가
 - [VeilKey와 H.O.P.E 컨퍼런스](/hope-veilkey-conference/)
 - [WhiteHat School 소형 LLM 연구](/whs-small-llm-pipeline/)
 - [BlackCat Random Test 워게임](/blackcat-random-test/)
+- [BlackCat 웹해킹 기초 스터디](/blackcat-file-csp-1/)
+- [BlackCat 여름방학 시스템 해킹 스터디](/blackcat-system-ret2win/)
 - [WooriCON Bug Bounty 참가](/wooricon-bug-bounty/)
 - [libpcap 기술문서](/libpcap-tcp-notes/)
 - [KW 해커톤](/kw-hackathon-local-commerce/)
