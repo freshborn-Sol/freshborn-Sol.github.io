@@ -1,5 +1,5 @@
 ---
-title: "GitHub Pages와 Gatsby로 공부 블로그 만들기"
+title: "공부 블로그 만들기"
 date: "2026-11-05"
 categories: ["개발"]
 author: "류한솔"
