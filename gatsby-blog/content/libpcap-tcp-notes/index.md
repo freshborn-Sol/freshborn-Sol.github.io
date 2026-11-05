@@ -1,6 +1,6 @@
 ---
 title: "C와 libpcap으로 TCP 패킷의 페이로드 위치 계산하기"
-date: "2026-11-05"
+date: "2026-06-27"
 categories: ["블로그/기술문서"]
 author: "류한솔"
 emoji: "📝"
