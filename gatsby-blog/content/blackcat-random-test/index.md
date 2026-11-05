@@ -1,6 +1,6 @@
 ---
 title: "BlackCat 워게임 — Random Test에서 응답 차이 읽기"
-date: "2026-11-05"
+date: "2026-10-28"
 categories: ["CTF/Wargame"]
 author: "류한솔"
 emoji: "🚩"
