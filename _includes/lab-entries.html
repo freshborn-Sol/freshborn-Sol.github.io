@@ -1,5 +1,0 @@
-{% for post in entries %}
-<article class="entry"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y.%m.%d' }}</time><div><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><p>{{ post.excerpt | strip_html | truncate: 130 }}</p></div><a class="entry-arrow" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }} 읽기">↗</a></article>
-{% else %}
-<div class="empty-record"><span aria-hidden="true">[ _ ]</span><div><h3>첫 번째 기록을 준비하고 있어요.</h3><p>실험과 발견을 하나씩 이곳에 남기겠습니다.</p></div></div>
-{% endfor %}

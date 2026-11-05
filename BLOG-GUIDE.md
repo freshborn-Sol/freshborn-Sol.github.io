@@ -1,7 +1,7 @@
 # 류한솔의 Gatsby 블로그
 
 zoomKoding/zoomkoding-gatsby-blog 원본 템플릿(0BSD)을 적용했습니다.
-실제 사이트 소스는 **gatsby-blog/** 폴더입니다. 이전 루트 HTML은 보존되어 있지만 새 배포에는 사용하지 않습니다.
+실제 사이트 소스는 **gatsby-blog/** 폴더입니다. 예전 루트 HTML·Jekyll 파일은 정리했으며, 정리 전 파일은 백업 브랜치에 보존했습니다.
 
 ## 직접 수정하기
 - 자기소개, 이메일, TimeLine, 고정 카테고리: `gatsby-blog/gatsby-meta-config.js`
@@ -46,7 +46,7 @@ GitHub Actions의 **Deploy Gatsby blog**가 빌드와 Pages 배포를 담당합�
 
 ## 기존 버전 복구
 `backup/static-before-gatsby-20261105` 브랜치에 전환 직전 버전이 있습니다.
-루트의 HTML 파일도 그대로 보존되어 있습니다.
+정리 전 전체 파일은 `backup/before-repository-cleanup-20261105` 브랜치에 보존되어 있습니다.
 
 템플릿 원본: https://github.com/zoomKoding/zoomkoding-gatsby-blog
 라이선스: gatsby-blog/LICENSE (0BSD)

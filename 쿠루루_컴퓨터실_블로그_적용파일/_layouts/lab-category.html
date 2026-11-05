@@ -1,7 +1,0 @@
----
-layout: lab
----
-<div class="screen-topline"><a href="{{ '/' | relative_url }}">WORKSPACE</a><span>/ DIRECTORY</span></div>
-<header class="page-heading"><p class="eyebrow">RESEARCH DIRECTORY / {{ page.taxonomy | upcase }}</p><h1>{{ page.title }}</h1><p>{{ page.description }}</p></header>
-{% assign entries = site.categories[page.taxonomy] %}
-{% include lab-entries.html %}
