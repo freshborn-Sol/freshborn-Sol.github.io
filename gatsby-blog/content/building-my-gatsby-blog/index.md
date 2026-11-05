@@ -1,6 +1,6 @@
 ---
 title: "공부 블로그 만들기"
-date: "2026-11-05"
+date: "2026-11-04"
 categories: ["개발"]
 author: "류한솔"
 emoji: "💻"
