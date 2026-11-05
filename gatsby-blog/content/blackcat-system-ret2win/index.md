@@ -1,6 +1,6 @@
 ---
 title: "BlackCat 여름방학 시스템 해킹 스터디 — 스택 BOF와 ret2win"
-date: "2026-11-05"
+date: "2026-08-02"
 categories: ["CTF/Wargame"]
 author: "류한솔"
 emoji: "💻"
