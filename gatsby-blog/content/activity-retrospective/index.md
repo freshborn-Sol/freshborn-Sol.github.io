@@ -42,3 +42,4 @@ VeilKey를 평가할 때는 진동이 작동하는지만 보는 것보다 누가
 - [WooriCON Bug Bounty 참가](/wooricon-bug-bounty/)
 - [libpcap 기술문서](/libpcap-tcp-notes/)
 - [KW 해커톤](/kw-hackathon-local-commerce/)
+- [CHIC 해커톤 민들레](/chic-hackathon-mindeulle/)
