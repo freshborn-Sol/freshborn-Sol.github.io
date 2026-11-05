@@ -1,6 +1,6 @@
 ---
 title: "where:wear — 매장에서 찾는 옷의 위치를 안내하기"
-date: "2026-11-05"
+date: "2026-09-30"
 categories: ["개발"]
 author: "류한솔"
 emoji: "👕"
