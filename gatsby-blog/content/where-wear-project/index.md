@@ -1,5 +1,5 @@
 ---
-title: "where:wear — 매장에서 찾는 옷의 위치를 안내하기"
+title: "26-2 창의설계입문 - 오프라인 의류 매장 옷 찾기 서비스, where:wear"
 date: "2026-09-30"
 categories: ["개발"]
 author: "류한솔"
