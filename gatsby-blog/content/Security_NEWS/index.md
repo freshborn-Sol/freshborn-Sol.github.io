@@ -1,5 +1,5 @@
 ---
-title: "Security_NEWS"
+title: "최신 보안뉴스 스크랩"
 date: "2026-11-06"
 categories: ["블로그/기술문서"]
 author: "류한솔"
@@ -17,3 +17,7 @@ emoji: "📰"
 
 - [이슈 제목](https://x.com/계정/status/게시물번호) · 이슈의 핵심을 한 문장으로 정리한다.
 -->
+**2026-11-06**
+
+- [FBI·CISA, 산업용 냉장·냉동 설비 표적 공격 경고](https://x.com/BleepinComputer/status/2118507947433091173) — FBI와 CISA는 산업용 냉장·냉동 설비를 겨냥한 공격을 관측했으며, 공격자가 온도 설정을 바꾸면 재고 손실이나 장비 손상이 발생할 수 있다고 경고했습니다.
+- **확인 상태 · 공식 확인.** FBI는 표적 공격 활동과 프랑스 국립혈액원 시설의 운영 방해 시도를 공식 발표했습니다. 시설 3곳의 설정 변경은 BleepingComputer가 혈액원 발표를 인용해 보도했으며, 혈액제제 손실 여부는 해당 기사에서 확인되지 않았습니다. 날짜는 첨부 화면에 표시된 X 게시일을 기준으로 삼았습니다. [FBI 공식 발표](https://www.fbi.gov/video-repository/industrial-refrigeration-and-cold-chain-monitoring-systems.mp4/view)
