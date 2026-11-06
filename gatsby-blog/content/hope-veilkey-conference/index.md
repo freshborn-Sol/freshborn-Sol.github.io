@@ -22,6 +22,6 @@ ATM이나 키오스크에서 비밀번호를 입력할 때, 시각장애인이 �
 
 </br>
 
-<img width="3179" height="4494" alt="2026 소원 H O P E 포스터" src="https://github.com/user-attachments/assets/e46efeb8-6e72-4f62-979b-7f956b81cd2b" />
+<img src="https://github.com/user-attachments/assets/e46efeb8-6e72-4f62-979b-7f956b81cd2b" alt="2026 소원 H.O.P.E 포스터" style="max-width: 100%; height: auto;">
 
 [VeilKey 팀 저장소](https://github.com/haveadooday/KW_Hope_Project)
