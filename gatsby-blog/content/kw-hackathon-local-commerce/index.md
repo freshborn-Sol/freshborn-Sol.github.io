@@ -1,5 +1,5 @@
 ---
-title: "KW 해커톤 — 월계1동 상권을 연결하는 서비스"
+title: "2026 KW Hackathon — 월계1동 상권을 연결하는 서비스"
 date: "2026-10
 -09"
 categories: ["공모전/자격증"]
