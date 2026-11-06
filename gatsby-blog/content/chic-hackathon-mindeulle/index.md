@@ -1,5 +1,5 @@
 ---
-title: "2026 CHIC 해커톤에서 만든 학부모 민원 분류 서비스, 민들레"
+title: "2026 KW CHIC Hackathon - 학부모 민원 분류 서비스, 민들레"
 date: "2026-08-14"
 categories: ["공모전/자격증"]
 author: "류한솔"
