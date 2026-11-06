@@ -1,5 +1,5 @@
 ---
-title: "26-2 창의설계입문 - 오프라인 의류 매장 옷 찾기 서비스, where:wear"
+title: "창의설계입문 - 오프라인 의류 매장 옷 찾기 서비스, where:wear"
 date: "2026-09-30"
 categories: ["개발"]
 author: "류한솔"
